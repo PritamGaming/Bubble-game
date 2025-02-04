@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy";
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
+.main {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #4567b7, #6495ed, #87ceeb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.panel {
+        width: 80%;
+        height: calc(70% - 10px);
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        
+}
+
+.ptop {
+        width: 100%;
+        height: 10%;
+        background: #39603F;
+        display: flex;
+        padding: 10px;
+        color: #C0FFA7;
+        align-items: center;
+        justify-content: space-between;
+        
+}
+
+.pbtm {
+       width: 100%;
+       height: calc(100% - 10%);
+       padding: 10px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 5px;
+}
+
+.elem {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        color: floralwhite;
+        
+}
+
+.elem h4  {
+        font-weight: 700;
+}
+
+.box {
+        background: #fff;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        font-weight: 700;
+        color:  #fff;
+        width: 20%;
+        margin-left: 5%;
+        background: linear-gradient(to right, #4567b7, #6495ed, #87ceeb);
+}
+
+.bubble {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #6DA076;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 22px;
+        transition: .4s;
+}
+
+.bubble:hover {
+        background: #72EF89;
+        color: #fff;
+        box-shadow: 0 10px 10px #00000059, inset -10px -10px -10px;
+}
+
+.refresh {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 24px;
+        background: #000000;
+        z-index: 100;
+        top: 0;
+        color: white;
+        padding: 12px;
+        flex-wrap: wrap;
+}
+
+.refresh p {
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 22px;
+}
+
+.pDiv {
+        width: 100%;
+        text-align: center;
+        display: block;
+        
+}
