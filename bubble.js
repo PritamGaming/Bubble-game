@@ -40,19 +40,35 @@ function runTimer() {
            
             document.body.appendChild(refresh)
            
-            refresh.innerHTML = `refresh the page to restart`
+             
+             
+            //let restart = document.createElement('a');
+            let restartBtn = document.createElement('button');
+            
+            restartBtn.addEventListener('click', function() {
+                    window.location.href = 'bubble.html';
+            })
+            
+            restartBtn.textContent = 'restart';
+            
+            restartBtn.classList.add('restartBtn')
+            
+            
             
             let pDiv = document.createElement('div');
             let p = document.createElement('p');
             
             pDiv.classList.add('pDiv');
             
-            pDiv.appendChild(p)
+            
             
             p.textContent = `score : ${score}`;
             
             
             
+            
+            pDiv.appendChild(p)
+            pDiv.appendChild(restartBtn)
             refresh.appendChild(pDiv)
            
             clearInterval(timerInt)
@@ -61,6 +77,7 @@ function runTimer() {
         } 
     }, 1000)
 }
+
 
 function increaseScore() {
          score += 10;
