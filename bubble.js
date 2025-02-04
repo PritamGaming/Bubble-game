@@ -46,7 +46,7 @@ function runTimer() {
             let restartBtn = document.createElement('button');
             
             restartBtn.addEventListener('click', function() {
-                    window.location.href = 'bubble.html';
+                    window.location.href = 'index.html';
             })
             
             restartBtn.textContent = 'restart';
