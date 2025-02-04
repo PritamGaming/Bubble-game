@@ -34,7 +34,29 @@ function runTimer() {
         document.getElementById('timerval').textContent = timer;
          }
           else {
+            let refresh = document.createElement('div');
+           
+            refresh.classList.add('refresh');
+           
+            document.body.appendChild(refresh)
+           
+            refresh.innerHTML = `refresh the page to restart`
+            
+            let pDiv = document.createElement('div');
+            let p = document.createElement('p');
+            
+            pDiv.classList.add('pDiv');
+            
+            pDiv.appendChild(p)
+            
+            p.textContent = `score : ${score}`;
+            
+            
+            
+            refresh.appendChild(pDiv)
+           
             clearInterval(timerInt)
+           
             pbtm.innerHTML = 'Refresh the page to restart'
         } 
     }, 1000)
@@ -94,3 +116,4 @@ getNewHit();
 generateBubbles(); // Call this for the first time to populate bubbles
 
 
+          
