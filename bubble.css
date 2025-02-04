@@ -125,3 +125,20 @@ html, body {
         display: block;
         
 }
+.restartBtn {
+        width: 200px;
+        height: 60px;
+        border-radius: 4px;
+        background: #6BF8DA;
+        color: #223632;
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 20px;
+        box-shadow: 3px 4px 0px 1px #E99F4C;
+}
+
+.restartBtn:hover {
+        opacity: .9;
+        transform: translateY(4px);
+        box-shadow: 1px 2px 0px 0px #E99F4C;
+    }
